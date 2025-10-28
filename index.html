@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .contact-links a {
+            color: #0066cc;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #0066cc;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .contact-links a:hover {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #000;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .news-item::before {
+            content: "📅";
+            position: absolute;
+            left: 0;
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: #666;
+            margin-right: 10px;
+        }
+
+        .publication {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #0066cc;
+            border-radius: 4px;
+        }
+
+        .publication-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .authors {
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .venue {
+            color: #0066cc;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .publication-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .publication-links a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 4px 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .publication-links a:hover {
+            border-color: #0066cc;
+            background-color: #f0f7ff;
+        }
+
+        .description {
+            margin-top: 10px;
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .interest-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .interest-tag {
+            background-color: #f0f0f0;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .contact-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name 이름</h1>
+        <p class="subtitle">PhD Student / Researcher / Engineer</p>
+        
+        <div class="contact-links">
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+            <a href="https://twitter.com/yourusername" target="_blank">Twitter/X</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="profile-image">
+            프로필 사진
+        </div>
+
+        <p>안녕하세요! 저는 [소속 기관]에서 [전공/분야]를 연구하고 있습니다. 
+        [연구 관심사]에 관심이 있으며, [간단한 자기소개]입니다.</p>
+    </header>
+
+    <section id="news">
+        <h2>News</h2>
+        <div class="news-item">
+            <span class="news-date">2025년 10월</span>
+            새로운 논문이 학회에 accept 되었습니다!
+        </div>
+        <div class="news-item">
+            <span class="news-date">2025년 9월</span>
+            연구실에서 인턴 연구자를 모집합니다. 관심있으신 분은 이메일 주세요.
+        </div>
+        <div class="news-item">
+            <span class="news-date">2025년 8월</span>
+            학회에서 발표를 진행했습니다.
+        </div>
+        <div class="news-item">
+            <span class="news-date">2025년 7월</span>
+            새로운 프로젝트를 시작했습니다.
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research Interest</h2>
+        <p>저의 주요 연구 분야는 다음과 같습니다:</p>
+        <div class="interest-list">
+            <span class="interest-tag">Machine Learning</span>
+            <span class="interest-tag">Natural Language Processing</span>
+            <span class="interest-tag">Computer Vision</span>
+            <span class="interest-tag">Artificial Intelligence</span>
+            <span class="interest-tag">Deep Learning</span>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <p>전체 논문 목록은 <a href="https://scholar.google.com" target="_blank">Google Scholar</a>에서 확인하실 수 있습니다.</p>
+
+        <div class="publication">
+            <div class="publication-title">
+                논문 제목: 첫 번째 주요 연구
+            </div>
+            <div class="authors">
+                <strong>Your Name</strong>, Co-author 1, Co-author 2, Co-author 3
+            </div>
+            <div class="venue">
+                Conference Name 2025
+            </div>
+            <div class="publication-links">
+                <a href="#">[Paper]</a>
+                <a href="#">[Code]</a>
+                <a href="#">[Project Page]</a>
+                <a href="#">[Slides]</a>
+            </div>
+            <div class="description">
+                이 논문에서는 [연구 내용 요약]을 제안합니다. 
+                주요 기여는 [핵심 내용]이며, [결과]를 달성했습니다.
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                논문 제목: 두 번째 주요 연구
+            </div>
+            <div class="authors">
+                Co-author 1, <strong>Your Name</strong>, Co-author 2
+            </div>
+            <div class="venue">
+                Journal Name 2024
+            </div>
+            <div class="publication-links">
+                <a href="#">[Paper]</a>
+                <a href="#">[Code]</a>
+                <a href="#">[Demo]</a>
+            </div>
+            <div class="description">
+                이 연구는 [연구 문제]를 다룹니다. 
+                제안한 방법론은 [방법론 설명]이고, 실험 결과 [성능 개선]을 보였습니다.
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                논문 제목: 세 번째 주요 연구
+            </div>
+            <div class="authors">
+                <strong>Your Name</strong>, Co-author 1
+            </div>
+            <div class="venue">
+                Workshop at Conference 2024
+            </div>
+            <div class="publication-links">
+                <a href="#">[Paper]</a>
+                <a href="#">[Poster]</a>
+            </div>
+            <div class="description">
+                [연구 주제]에 대한 초기 연구로, [접근 방법]을 탐구했습니다.
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Education</h3>
+        <ul>
+            <li><strong>PhD in Computer Science</strong> - University Name (2024 - Present)</li>
+            <li><strong>Master in Computer Science</strong> - University Name (2022 - 2024)</li>
+            <li><strong>Bachelor in Computer Science</strong> - University Name (2018 - 2022)</li>
+        </ul>
+
+        <h3>Work Experience</h3>
+        <ul>
+            <li><strong>Research Intern</strong> - Company/Lab Name (2023)</li>
+            <li><strong>Teaching Assistant</strong> - Course Name (2022)</li>
+        </ul>
+    </section>
+
+    <section id="service">
+        <h2>Academic Service</h2>
+        <h3>Reviewer</h3>
+        <ul>
+            <li>Conference Name 2025</li>
+            <li>Conference Name 2024</li>
+            <li>Journal Name</li>
+        </ul>
+
+        <h3>Teaching</h3>
+        <ul>
+            <li>Teaching Assistant - Course Name (Semester Year)</li>
+        </ul>
+    </section>
+
+    <section id="awards">
+        <h2>Awards & Honors</h2>
+        <ul>
+            <li>Award Name, Institution, 2024</li>
+            <li>Scholarship Name, Institution, 2023</li>
+            <li>Competition Award, Organization, 2022</li>
+        </ul>
+    </section>
+
+    <section id="misc">
+        <h2>Miscellaneous</h2>
+        <p>연구 외에는 [취미/관심사]를 즐깁니다. 
+        다양한 배경을 가진 사람들과 협업하는 것을 좋아하며, 
+        언제든 연락 주시면 즐거운 대화를 나눌 수 있을 것 같습니다!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. Last updated: October 2025</p>
+    </footer>
+</body>
+</html>
