@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Homepage</title>
+    <title>Kihyun Kim's Homepage</title>
     <style>
         * {
             margin: 0;
@@ -62,13 +62,10 @@
         .profile-image {
             width: 200px;
             height: 200px;
-            background-color: #f0f0f0;
             border-radius: 50%;
             margin: 20px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
+            object-fit: cover;
+            border: 3px solid #f0f0f0;
         }
 
         section {
@@ -217,54 +214,45 @@
 </head>
 <body>
     <header>
-        <h1>Your Name 이름</h1>
-        <p class="subtitle">PhD Student / Researcher / Engineer</p>
+        <h1>Kihyun Kim</h1>
+        <p class="subtitle">MS Graduate / AI Researcher</p>
         
         <div class="contact-links">
-            <a href="mailto:your.email@example.com">Email</a>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-            <a href="https://twitter.com/yourusername" target="_blank">Twitter/X</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="mailto:ki5477@snu.ac.kr">Email</a>
+            <a href="https://github.com/kimlemon1" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/kikey777" target="_blank">LinkedIn</a>
         </div>
 
-        <div class="profile-image">
-            프로필 사진
-        </div>
+        <img src="images/profile_img.jpeg" alt="프로필 사진" class="profile-image">
 
-        <p>안녕하세요! 저는 [소속 기관]에서 [전공/분야]를 연구하고 있습니다. 
-        [연구 관심사]에 관심이 있으며, [간단한 자기소개]입니다.</p>
+        <p>I am an AI researcher working at Datumo. My research interests include computer vision, multimodal understanding, controllable generation models.
+            You can pronounce my name as "Key-yeon Kim".
+        </p>
     </header>
 
     <section id="news">
         <h2>News</h2>
         <div class="news-item">
-            <span class="news-date">2025년 10월</span>
-            새로운 논문이 학회에 accept 되었습니다!
+            <span class="news-date">May, 2025</span>
+            Thrilled to share that I'll be joining Datumo(https://datumo.ai/) as an AI Research intern starting May 2025! Looking forward to contributing to exciting AI projects and collaborating with talented minds in the industry.
         </div>
         <div class="news-item">
-            <span class="news-date">2025년 9월</span>
-            연구실에서 인턴 연구자를 모집합니다. 관심있으신 분은 이메일 주세요.
+            <span class="news-date">Feb, 2025</span>
+            Glad to announce that HATIE(LINK) has been accepted to the CVPR 2025 Main Conference highlight poster! 🎉 Many thanks to all collaborators!
         </div>
         <div class="news-item">
-            <span class="news-date">2025년 8월</span>
-            학회에서 발표를 진행했습니다.
-        </div>
-        <div class="news-item">
-            <span class="news-date">2025년 7월</span>
-            새로운 프로젝트를 시작했습니다.
+            <span class="news-date">Jul, 2023</span>
+            Excited to share that I'll be joining VIP Lab(https://viplab.snu.ac.kr/index.html) at Seoul National University as a Master's student, advised by Prof. Joonseok Lee!
         </div>
     </section>
 
     <section id="research">
         <h2>Research Interest</h2>
-        <p>저의 주요 연구 분야는 다음과 같습니다:</p>
         <div class="interest-list">
-            <span class="interest-tag">Machine Learning</span>
-            <span class="interest-tag">Natural Language Processing</span>
-            <span class="interest-tag">Computer Vision</span>
-            <span class="interest-tag">Artificial Intelligence</span>
-            <span class="interest-tag">Deep Learning</span>
+            <span class="interest-tag">Generative Modeling</span>
+            <span class="interest-tag">Multimodal understanding(text + vision)</span>
+            <span class="interest-tag">Computer Vision(image, video editing)</span>
+            <span class="interest-tag">Cognitive models, explainable AI</span>
         </div>
     </section>
 
