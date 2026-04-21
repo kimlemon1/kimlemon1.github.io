@@ -127,9 +127,17 @@
         }
 
         .venue {
-            color: #0066cc;
             font-weight: 600;
             margin-bottom: 10px;
+        }
+
+        .venue.accepted {
+            color: #0066cc;
+        }
+
+        .venue.submitted {
+            color: #888;
+            font-style: italic;
         }
 
         .publication-links {
@@ -225,7 +233,7 @@
 
         <img src="images/profile_img.jpeg" alt="프로필 사진" class="profile-image">
 
-        <p>I am an AI researcher working at Datumo. My research interests include computer vision, multimodal understanding, controllable generation models.
+        <p>I am an AI researcher working at <a href="https://www.aim-intelligence.com/" target="_blank">AIM-Intelligence</a>, focusing on Physical AI Safety. My research interests include computer vision, multimodal understanding, controllable generation models, and AI safety.
             You can pronounce my name as "Key-yeon Kim".
         </p>
     </header>
@@ -233,8 +241,12 @@
     <section id="news">
         <h2>News</h2>
         <div class="news-item">
+            <span class="news-date">Jan, 2026</span>
+            Joined <a href="https://www.aim-intelligence.com/" target="_blank">AIM-Intelligence</a> as a Physical AI Safety Researcher, working on humanoid robot safety guard models with LG-AI!
+        </div>
+        <div class="news-item">
             <span class="news-date">May, 2025</span>
-            Thrilled to share that I'll be <a href="https://datumo.ai/" target="_blank">Datumo</a> joining as an AI Research intern starting May 2025! Looking forward to contributing to exciting AI projects and collaborating with talented minds in the industry.
+            Joined <a href="https://datumo.ai/" target="_blank">Datumo (SelectStar)</a> as an AI Research Intern, working on Red Teaming and LLM Safety.
         </div>
         <div class="news-item">
             <span class="news-date">Feb, 2025</span>
@@ -250,28 +262,62 @@
         <h2>Research Interest</h2>
         <div class="interest-list">
             <span class="interest-tag">Generative Modeling</span>
-            <span class="interest-tag">Multimodal understanding(Text + Vision)</span>
-            <span class="interest-tag">Computer Vision(Image, Video editing)</span>
-            <span class="interest-tag">Cognitive models, Explainable AI</span>
+            <span class="interest-tag">Multimodal Understanding (Text + Vision)</span>
+            <span class="interest-tag">Computer Vision (Image, Video Editing)</span>
+            <span class="interest-tag">Physical AI Safety</span>
+            <span class="interest-tag">Red Teaming LLMs</span>
+            <span class="interest-tag">Cognitive Models, Explainable AI</span>
         </div>
     </section>
 
     <section id="publications">
         <h2>Publications</h2>
+
         <div class="publication">
             <div class="publication-title">
-                HATIE: Towards Scalable Human-aligned Benchmark for Text-guided Image Editing
+                HATIE: Towards a Scalable Human-Aligned Benchmark for Text-Guided Image Editing
             </div>
             <div class="authors">
-                <p class='my-underline'>Suho Ryu, <strong>Kihyun Kim</strong>, Eugene Baek</p>, Dongsu Shin, Joonseok Lee
+                Suho Ryu*, <strong>Kihyun Kim*</strong>, Eugene Baek*, Dongsu Shin, Joonseok Lee &nbsp;(* equal contribution)
             </div>
-            <div class="venue">
-                CVPR 2025
+            <div class="venue accepted">
+                CVPR 2025 (Highlight)
             </div>
-            <div class="publication-links">
-                <a href="https://arxiv.org/pdf/2505.00502">[Paper]</a>
-                <a href="https://github.com/SuhoRyu/HATIE">[Code]</a>
-                <a href="https://www.youtube.com/watch?v=LTlKByPynI0">[Presentation]</a>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                CAGE: A Framework for Culturally Adaptive Red-Teaming Benchmark Generation
+            </div>
+            <div class="authors">
+                Changmin Kim, Younghun Lim, <strong>Kihyun Kim</strong>, Minsoo Kim
+            </div>
+            <div class="venue accepted">
+                ICLR 2026
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                Fine-Grained Multi Image Object Hallucination Benchmark
+            </div>
+            <div class="authors">
+                Junhyeok Min, Changmin Kim, Keunhyuk Choi, Yebin Kim, <strong>Kihyun Kim</strong>, Youngjae Jo, Joonseok Lee
+            </div>
+            <div class="venue accepted">
+                CVPR 2026
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-title">
+                STAR-Teaming: A Strategy-Response Multiplex Network Approach to Automated LLM Red Teaming
+            </div>
+            <div class="authors">
+                Minjong Jung, Younghun Lim, Changmin Kim, Jongwon Kim, <strong>Kihyun Kim</strong>, Minsoo Kim
+            </div>
+            <div class="venue accepted">
+                ACL 2026 Findings
             </div>
         </div>
     </section>
@@ -281,17 +327,18 @@
         <h3>Education</h3>
         <ul>
             <li><strong>Master in Data Science</strong> - Seoul National University (2023 - 2025)</li>
-            <li><strong>Bachelor in Science of Earth and Environment</strong> - Seoul National Unversity (2017 - 2023)</li>
+            <li><strong>Bachelor in Earth and Environment</strong> - Seoul National University (2017 - 2023)</li>
         </ul>
 
         <h3>Work Experience</h3>
         <ul>
-            <li><strong>Research Intern</strong> - Datumo (2025)</li>
+            <li><strong>Physical AI Safety Researcher</strong> - <a href="https://www.aim-intelligence.com/" target="_blank">AIM-Intelligence</a> (Jan. 2026 - Present)</li>
+            <li><strong>Red Teaming AI Researcher / Safety Judge Engineer</strong> - Datumo, SelectStar (May 2025 - Dec. 2025)</li>
         </ul>
     </section>
 
     <footer>
-        <p>&copy; 2025 Kihyun Kim Last updated: October 2025</p>
+        <p>&copy; 2026 Kihyun Kim Last updated: April 2026</p>
     </footer>
 </body>
 </html>
